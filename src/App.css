@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todoWrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* color : white; */
+  padding-top: 10px;
+  width: 40%;
+  margin: auto;
+  background-color: rgb(28, 25, 66);
+  /* border-radius: 30px; */
+  padding-bottom: 40px;
+}
+
+.todoWrapper h1{
   color: white;
+  font-size: 2.5rem;
+  font-family:monospace;
+  /* padding-bottom: 15px; */
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+  background-image: linear-gradient(rgb(138,117,253), rgb(105,86,191));
+  height: 100vh;
+  margin: -8px;
+  padding-top: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoForm{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form__input{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left:20px ;
+  padding-right:20px ;
+  outline: none;
+  background-color: transparent;
+  color: rgb(209, 207, 207);
+  font-size: 0.9rem;
+  border: 2px solid rgb(84, 71, 161);
+  width: 100%;
+}
+
+.form__button{
+  background-color: rgb(84, 71, 161);
+  border: none;
+  padding: 12px;
+  width: 120px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form__button:hover{
+  background-color: rgb(98, 83, 185);
+}
+
+.Todo{
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  background-color: rgb(93, 79, 172);
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  margin-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 20px;
+}
+
+.Todo p {
+  font-size: 16px;
+  font-family:monospace;
+  cursor: pointer;
+}
+
+.Todo .icon1{
+  margin-right: 5px;
+}
+
+.completed{
+  text-decoration:line-through;
+  color: rgb(180, 180, 180);
 }
